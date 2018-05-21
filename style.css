@@ -1,0 +1,81 @@
+/*
+ * Theme Name: 		Newbie Bootstrap Theme
+ * Theme URI: 		
+ * Author:			Kim Gamana
+ * Author URI: 		https://kimcodex.github.io
+ * Description: 	This is just a test sample theme. The design is based on bootstrap sample templates
+ * Version: 		1.0
+ * Tags:			bootstrap theme, responsive, simple, 
+ * Text Domain: 	
+ *
+ */
+
+body.logged-in{
+	padding-top:38px;
+}
+
+
+/* 1. Header Navigation*/
+
+.navbar-nav {
+	padding-left: 10px;
+}
+
+.navbar-nav li a {
+	color: #8e8e8e;
+	padding: 8px;
+	text-decoration: none;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.current-menu-item a:link,
+.navbar-nav li.current-menu-item a:visited {
+	color: #fff;
+}
+
+button[type='submit'] {
+	border-color: #02f7f7;
+	color: #02f7f7;
+}
+
+button[type='submit']:hover {
+	background: #02f7f7;
+	border-color: #02f7f7;
+
+}
+
+/*Post image*/
+.thumbnail img {
+	width: 100%;
+	height: auto;
+	padding-bottom: 10px;
+}
+
+/* Single Comments*/
+
+.comments li {
+	list-style-type: none;
+	padding: 2px;
+}
+
+.comment-author img {
+	border-radius: 50%;
+}
+
+
+/*Footer*/
+#menu-footer-menu {
+	padding: 0;
+}
+
+#menu-footer-menu li{
+	text-decoration: none;
+	display: inline;
+	padding: 5px;
+}
+
+
+#wpadminbar {
+	opacity: .9;
+}
+
