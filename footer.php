@@ -1,17 +1,19 @@
 
- 
-	<section class="blog-footer">
-		
-		<p>&copy; <?php echo date('Y'); echo' '; bloginfo( 'name' ); ?>
-			<?php 
-				$args = [
-				    'theme_location' => 'footer'
-				];
+ 	<?php if(!(is_404())) : ?>
+ 		<section class="blog-footer">
+ 			
+ 			<p>&copy; <?php echo date('Y'); echo' '; bloginfo( 'name' ); ?>
+ 				<?php 
+ 					$args = [
+ 					    'theme_location' => 'footer'
+ 					];
 
-				wp_nav_menu($args);
-			 ?>
-		</p>
-	</section>
+ 					wp_nav_menu($args);
+ 				 ?>
+ 			</p>
+ 		</section>
+ 	<?php endif; ?>
+	
 	
 	
 	<?php wp_footer(); ?>

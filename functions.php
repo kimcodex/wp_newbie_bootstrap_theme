@@ -1,7 +1,7 @@
 <?php 
 	// add css 
 	function mytheme_add_theme_scripts() {
-		wp_enqueue_style( 'google-font', 'https://fonts.googleapis.com/css?family=Playfair+Display:700,900',false);
+		wp_enqueue_style( 'google-font', 'https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:700,900',false);
 		wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css',false,'4.1.0','all');
 		wp_enqueue_style( 'carousel', get_template_directory_uri() . '/assets/css/carousel.css',false,rand(111,9999),'all');
 		wp_enqueue_style( 'blog', get_template_directory_uri() . '/assets/css/blog.css',false,'4.1.0','all');
