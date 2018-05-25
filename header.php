@@ -22,8 +22,8 @@
 		      <?php 
 	        	 wp_nav_menu( array( 
 	        		'theme_location' => 'nav',
-	        		'container_id' => 'navbarCollapse',
-	        		'container_class' => 'collapse navbar-collapse',
+	        		// 'container_id' => 'navbarCollapse',
+	        		'container_class' => '',//'collapse navbar-collapse',
 	        		'menu_class' => 'navbar-nav mr-auto', 
 	        		'menu_id' => 'nav-menu-ul',
 	        		 )); 

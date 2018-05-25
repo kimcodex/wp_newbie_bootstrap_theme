@@ -38,6 +38,7 @@ body.logged-in{
 	color: #fff;
 }
 
+
 button[type='submit'] {
 	border-color: var(--main-color);
 	color: var(--main-color);
