@@ -22,14 +22,20 @@
 		      <?php 
 	        	 wp_nav_menu( array( 
 	        		'theme_location' => 'nav',
+	        		'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
 	        		// 'container_id' => 'navbarCollapse',
 	        		'container_class' => '',//'collapse navbar-collapse',
-	        		'menu_class' => 'navbar-nav mr-auto', 
-	        		'menu_id' => 'nav-menu-ul',
+	        		'menu_class'	 => 'navbar-nav mr-auto', 
+	        		'menu_id' 		=> 'nav-menu-ul',
+	        		'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+	        		'walker'          => new WP_Bootstrap_Navwalker()
 	        		 )); 
 	           ?> 
 
-		      <?php get_search_form(); ?>
+	           <div class="search-form">
+		      		<?php get_search_form(); ?>		
+	           </div>
+
 		    </div>
 		  </nav>
 		</header>

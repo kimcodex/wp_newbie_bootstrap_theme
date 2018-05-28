@@ -6,7 +6,7 @@
  * Description: 	This is just a test sample theme. The design is based on bootstrap sample templates
  * Version: 		1.0
  * Tags:			bootstrap theme, responsive, simple, 
- * Text Domain: 	
+ * Text Domain: 	newbiebootstrap
  *
  */
 
@@ -22,13 +22,17 @@ body.logged-in{
 
 /* 1. Header Navigation*/
 
-.navbar-nav {
-	padding-left: 10px;
+.menu-nav-menu-container {
+	margin-left: auto; 
 }
+
+.navbar-nav, .navbar-nav li {
+	padding: 0px 5px;
+}
+
 
 .navbar-nav li a {
 	color: #8e8e8e;
-	padding: 8px;
 	text-decoration: none;
 }
 
@@ -37,7 +41,6 @@ body.logged-in{
 .navbar-nav li.current-menu-item a:visited {
 	color: #fff;
 }
-
 
 button[type='submit'] {
 	border-color: var(--main-color);
@@ -48,6 +51,30 @@ button[type='submit']:hover {
 	background: var(--main-color);
 	border-color: var(--main-color);
 
+}
+
+.dropdown:hover .dropdown-menu {   /* display dropdown when hovering menus*/
+     display: block;
+}
+
+.dropdown-menu{
+	padding: 5px 0px;
+}
+
+.dropdown-menu li {
+	padding: 0;
+}
+.dropdown-menu li.current-menu-item, .dropdown-item:hover {
+	background-color: gray;
+}
+
+.dropdown-item {
+	padding: 10px;
+}
+
+.dropdown-toggle::after {
+	margin-left: 0.40em;
+	vertical-align: 0.15em;
 }
 
 /*Post image*/
@@ -144,4 +171,3 @@ body.error404 {
 #wpadminbar {
 	opacity: .9;
 }
-

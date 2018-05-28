@@ -9,23 +9,21 @@
           <?php endforeach; ?> 
         </nav>
       </div>
-
-      
+    </div>
 
     <main role="main" class="container">
       <div class="row">
         <div class="col-md-8 blog-main">
 		
-		<?php 
-			if (have_posts()) :
-				while(have_posts()): the_post(); 
-          get_template_part('content');        
-		    endwhile;
-			else :
-				echo '<p>No post found<p>';
-			endif;
-		 ?>
-
+      		<?php 
+      			if (have_posts()) :
+      				while(have_posts()): the_post(); 
+                get_template_part('content');        
+      		    endwhile;
+      			else :
+      				echo '<p>No post found<p>';
+      			endif;
+      		 ?>
 
         </div><!-- /.blog-main -->
 

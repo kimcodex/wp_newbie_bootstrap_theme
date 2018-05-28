@@ -12,13 +12,16 @@
 	}
 	add_action( 'wp_enqueue_scripts', 'mytheme_add_theme_scripts' );
 
+	// Register Custom Navigation Walker
+	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
 	function wp_theme_setup(){
 		// Theme Support
 		add_theme_support( 'post-thumbnails' ); //add feature img on adding new post
 
 		// Navigation menus
 		register_nav_menus( array( 
-			'nav' => __('Main Navigation  Menu'),
+			'nav' => __('Main Navigation  Menu', 'newbiebootstrap'),
 			'footer' => __('Footer Menu')
 		) );
 
