@@ -43,7 +43,7 @@
 	        'fields' => apply_filters( 'comment_form_default_fields', $fields ),
 	        'label_submit'=>'Submit',
 	        'class_submit' => 'btn btn-primary',
-		);		
+		); 		
 
 	?>
 

@@ -7,8 +7,8 @@
 <main role="main">
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 	  <ol class="carousel-indicators">
-	  	<?php for ($i=1; $i <= $slides; $i++) : ?>
-			<li data-target="#myCarousel" data-slide-to="<?php echo $i ?>" class="<?php echo ($i==1)?'active':''; ?>"></li>
+	  	<?php for ($i=0; $i < $slides; $i++) : ?>
+			<li data-target="#myCarousel" data-slide-to="<?php echo $i ?>" class="<?php echo ($i==0)?'active':''; ?>"></li>
 	  	<?php endfor; ?>
 	  </ol>
 	  <div class="carousel-inner">

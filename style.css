@@ -130,6 +130,15 @@ button[type='submit']:hover {
 	float: right;
 }
 
+/*======== Sidebar ========*/
+
+.p-3 ul {
+	padding: 0;
+}
+.p-3 ul li {
+	list-style: none;
+}
+
 /*======== 404 page ========*/
 body.error404 {
     background-size: cover;
